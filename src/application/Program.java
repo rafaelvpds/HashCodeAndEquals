@@ -1,26 +1,19 @@
 package application;
 
+import entities.Clients;
+
 public class Program {
 
 	public static void main(String[] args) {
 		// EQUALS E UM METODO QUE COMPARA SE O OBJETO E IGUAL AO OUTRO
 
-		String a = "Maria";
+		Clients c1 = new Clients("Rafael", "rafaelvpds@gmail.com");
+		Clients c2 = new Clients("Rafael", "veronica.psico@gmail.com");
 
-		String b = "Alex";
+		System.out.println(c1.hashCode());
+		System.out.println(c2.hashCode());
 
-		// String a nao e igual a B
-		System.out.println(a.equals(b));
-
-		// HashCode e um metodos que retorna um numero inteiro representando um codigo
-		// gerado a partir das informações dos objetos
-		String c = "Maria";
-
-		String d = "Alex";
-
-		// String a nao e igual a B
-		System.out.println(c.hashCode());
-		System.out.println(d.hashCode());
+		System.out.println(c1.equals(c2));
 
 	}
 
