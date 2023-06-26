@@ -8,7 +8,7 @@ public class Program {
 		// EQUALS E UM METODO QUE COMPARA SE O OBJETO E IGUAL AO OUTRO
 
 		Clients c1 = new Clients("Rafael", "rafaelvpds@gmail.com");
-		Clients c2 = new Clients("Rafael", "veronica.psico@gmail.com");
+		Clients c2 = new Clients("Rafael", "rafael.dev@gmail.com");
 
 		System.out.println(c1.hashCode());
 		System.out.println(c2.hashCode());
